@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "automated-network-inventory"
+version = "0.1.0"
+description = "This is a simple application to gather network device information using Ansible, store it in Nautobot, and generate a visual network diagram"
+authors = ["reshma raghavan <u1430631@umail.utah.edu>"]
+license = "Apache 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ansible = "^10.1.0"
+django = "^5.0.6"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.dependencies.nautobot]
+version = "^2.2.5"
+python = ">=3.8,<3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
