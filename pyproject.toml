@@ -7,18 +7,14 @@ license = "Apache 2.0"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.11.0,<3.12"
 ansible = "^10.1.0"
-django = "^5.0.6"
+django = "^3.2.25"
 python-dotenv = "^1.0.1"
 graphviz = "^0.20.3"
 networkx = "^3.3"
-
-[tool.poetry.dependencies.nautobot]
-version = "^2.2.5"
-python = ">=3.8,<3.12"
+nautobot = "^2.2.5"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
